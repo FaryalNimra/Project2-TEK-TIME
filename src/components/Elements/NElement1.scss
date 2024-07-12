@@ -1,0 +1,67 @@
+.nelement1-container {
+  position: relative;
+  background-color: #161C2D;
+  padding: 60px; /* Adjust padding for spacing */
+
+  .overlay {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+
+    .content {
+      color: #fff;
+      text-align: left;
+      margin-bottom: 40px; /* Adjust margin between rows */
+
+      .nelement1-heading {
+        font-size: 45px;
+        margin-bottom: 20px;
+        font-weight: bold;
+        text-align: left;
+      }
+
+      .nelement1-paragraph {
+        font-size: 18px;
+        margin-bottom: 20px;
+        color: #ffffff;
+      }
+
+      .btn-primary1 {
+        font-size: 16px;
+        color: #ffffff;
+        background-color: transparent; /* Remove background color */
+        cursor: pointer;
+        border-color: transparent;
+  
+
+      }
+    }
+
+    .right-image {
+      max-width: 100%;
+      height: auto; /* Ensure image maintains aspect ratio */
+    }
+  }
+
+  @media (max-width: 768px) {
+    .overlay {
+      .content {
+        .nelement1-heading {
+          font-size: 24px;
+        }
+
+        .nelement1-paragraph {
+          font-size: 14px;
+        }
+
+        .btn-primary1 {
+          font-size: 14px;
+        }
+      }
+
+      .right-image {
+        max-width: 50%;
+        height: auto; /* Ensure image maintains aspect ratio */
+      }
+    }
+  }
+}

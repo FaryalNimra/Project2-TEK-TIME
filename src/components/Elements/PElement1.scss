@@ -1,0 +1,154 @@
+.element7-container {
+  padding: 0px;
+  margin-top: 50px;
+  text-align: center;
+  transition: border-color 0.3s ease;
+}
+
+.element7-paragraph {
+  font-size: 15px;
+  color: #161C2D;
+  margin-bottom: 30px;
+  padding-left: 50px;
+  font-family: 'Gilroy-Regular', sans-serif;
+}
+
+.element7-heading1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  padding-left: 50px;
+  font-family: 'Gilroy-Bold', sans-serif;
+}
+
+.element7-form {
+  border: 3px solid aliceblue; /* Light gray border */
+  border-radius: 15px;
+  padding: 20px;
+  height: 400px; 
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: border-color 0.3s ease;
+  background-color: white; /* White background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.element7-form:hover {
+  border-color: #473BF0; /* Blue border on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Slightly larger shadow on hover */
+}
+
+.element7-form1 {
+  border: 3px solid #473BF0; /* Blue border */
+  border-radius: 15px;
+  padding: 20px;
+  height: 400px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: border-color 0.3s ease;
+  background-color: aliceblue; /* White background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  width: 300px;
+}
+
+.element7-form1:hover {
+  border-color: #473BF0; /* Blue border on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Slightly larger shadow on hover */
+}
+
+.element7-section-paragraph {
+  font-size: 16px;
+  text-align: center;
+  color: #473BF0;
+  font-family: 'Gilroy-Bold', sans-serif;
+}
+
+.element7-section-paragraph.black-text {
+  color: black; /* Change color to black */
+}
+
+.element7-heading {
+  font-size: 26px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: 'Gilroy-Bold', sans-serif;
+  margin-top: 20px;
+}
+
+.element7-spacer {
+  flex-grow: 1; /* This spacer will push the button to the bottom */
+}
+
+.btn-primary {
+  padding: 10px 20px;
+  font-size: 15px;
+  background-color: white;
+  color: blue; /* Button text color blue */
+  border: 1px solid white;
+  width: 80%; /* Reduce button width */
+  align-self: center; /* Center the button horizontally */
+  margin: 0 auto; /* Center the button */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button-icon {
+  vertical-align: middle; /* Align the icon vertically with the button text */
+  margin-left: 5px; /* Adjust the spacing between the text and the icon */
+}
+
+.btn-primary:hover {
+  background-color: blue; /* Background color blue on hover */
+  color: #fff;
+}
+.btn-primary1 {
+  padding: 10px 20px;
+  font-size: 15px;
+  background-color: blue;
+  color: white; /* Button text color blue */
+  border: 1px solid white;
+  width: 80%; /* Reduce button width */
+  align-self: center; /* Center the button horizontally */
+  margin: 0 auto; /* Center the button */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button-icon {
+  vertical-align: middle; /* Align the icon vertically with the button text */
+  margin-left: 5px; /* Adjust the spacing between the text and the icon */
+}
+
+.btn-primary1:hover {
+  background-color: blue; /* Background color blue on hover */
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .element7-form {
+    flex-direction: column; 
+    align-items: flex-start; 
+    padding: 15px; 
+    height: auto;
+  }
+
+  .element7-container .row {
+    max-width: 80%;
+  }
+
+  .element7-section-paragraph {
+    text-align: left; /* Align text to left */
+  }
+
+  .element7-heading {
+    text-align: left; /* Align text to left */
+  }
+  .element7-paragraphk{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .btn-primary {
+    width: 50%; /* Full width button */
+    margin-top: 15px; /* Add margin to separate button from heading */
+  }
+}

@@ -1,0 +1,166 @@
+.footer {
+  background-color: #161C2D; /* Dark background color */
+  padding: 20px 0;
+  color: white;
+}
+
+.logo-box {
+  display: flex;
+  justify-content: flex-end; /* Align logo to the right */
+}
+
+.logo-image {
+  width: 150px; /* Increased width */
+  height: 200px; /* Maintain aspect ratio */
+}
+
+.box-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; /* Align content boxes to the left */
+  flex-wrap: nowrap;
+  padding-left: 100px; /* Initial padding to start the alignment */
+}
+
+.box {
+  margin: 10px;
+  background-color: #161C2D;
+  color: white;
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+.box:first-of-type {
+  margin-left: 0; /* No additional margin for the first box */
+  padding-left: 100px; /* Adjust padding for proper alignment */
+}
+
+.box:nth-of-type(2) {
+  margin-left: 170px; /* Move the second box 170px to the right */
+  padding-left: 0; /* Remove padding to align with the first box */
+}
+
+.box:nth-of-type(3) {
+  margin-left: 160px; /* Move the third box 160px further to the right */
+  padding-left: 0; /* Remove padding to align with the other boxes */
+}
+
+.box:last-of-type {
+  margin-right: 20px; /* 20px space from the right edge */
+  padding-left: 0; /* Remove padding to align with the other boxes */
+}
+
+h4 {
+  font-size: 23px;
+  color: grey;
+  margin-bottom: 10px;
+  font-family: 'Gilroy-Bold', sans-serif;
+}
+
+.box p,
+.box a {
+  font-size: 18px;
+  color: white;
+  line-height: 1.5;
+  font-family: 'Gilroy-Regular', sans-serif;
+}
+
+.box a {
+  display: block;
+  margin-bottom: 5px;
+  text-decoration: none;
+  font-family: Montserrat, sans-serif;
+}
+
+.footer-divider {
+  border: 0;
+  height: 1px;
+  background: #6d8bb0;
+  margin: 20px 0;
+}
+
+.social-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.footer-logo {
+  flex: 4;
+}
+
+.footer-text {
+  flex: 1;
+  text-align: center;
+  color: #6d8bb0;
+  font-family: 'Gilroy-Regular', sans-serif;
+}
+
+.footer-icons {
+  flex: 1;
+  text-align: right;
+  display: flex;
+  gap: 10px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .box:nth-of-type(2) {
+    margin-left: 100px; /* Reduce margin for smaller screens */
+  }
+
+  .box:nth-of-type(3) {
+    margin-left: 100px; /* Reduce margin for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .box-content {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 0px;
+  }
+
+  .box {
+    max-width: 80%; 
+    padding-left: 0px; /* Adjust padding for better spacing */
+    margin-left: 0; /* Reset margins for stacking */
+    margin-right: 0; /* Reset margins for stacking */
+  }
+.box p,
+.box a {
+  font-size: 14px;
+  color: white;
+  line-height: 1.5;
+  font-family: 'Gilroy-Regular', sans-serif;
+}
+h4{
+  font-size: 14px;
+}
+  .logo-box {
+    justify-content: left;
+    margin-bottom: 50px; 
+  }
+}
+
+@media (max-width: 576px) {
+  .logo-box {
+    justify-content: center;
+  }
+
+  .box-content {
+    align-items: flex-start; /* Start boxes from the left */
+    padding-left: 0px; /* Ensure no padding on the left */
+  }
+
+  .box {
+    max-width: 50%;
+    text-align: left;
+    margin: 10px 0;/* Remove side margins to align to the left */
+  }
+
+  .box:last-of-type {
+    margin-bottom: 20px; /* Additional space at the bottom */
+  }
+}
